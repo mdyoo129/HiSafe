@@ -28,7 +28,7 @@ HiSafe merupakan aplikasi yang memungkinkan penggunanya dapat menemukan segala h
   - Mudah
   - Warna: forest tone (soft green, green, white, brown)
   - Inspirasi desain: ![Design Inspiration](https://cdn.dribbble.com/userupload/10978499/file/original-4d0d54e1c87fc02e1eaf126bcbe1ef80.png)
-  - 
+    
 ## *User Story*
 | Sebagai | Saya ingin bisa | Sehingga | Prioritas |
 | ------ | ------ | ------ | ------ |
