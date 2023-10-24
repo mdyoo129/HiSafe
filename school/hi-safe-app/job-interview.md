@@ -41,3 +41,7 @@ HiSafe merupakan aplikasi yang memungkinkan penggunanya dapat menemukan segala h
 | Pengguna | Melihat profil | Dapat mengetahui informasi mengenai akun atau profil sendiri | 🔱🔱🔱🔱 |
 | Pengguna | Mengubah profil | Dapat mengubah informasi mengenai akun diri sendiri | 🔱🔱🔱🔱 |
 | Pengguna | Menghubungi Psikolog | Dapat melakukan konsultasi dengan psikolo melalui fitur chat | 🔱
+
+## UI / UX Desain
+![Desain 1](https://cdn.dribbble.com/userupload/10984625/file/original-6797b06bddbd9219d3be9faf98e30cf1.png) 
+![Desain 2](https://cdn.dribbble.com/userupload/10984624/file/original-664e74d154da91d8f3b7a0b40a6c2f65.png)
