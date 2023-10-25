@@ -42,6 +42,36 @@ HiSafe merupakan aplikasi yang memungkinkan penggunanya dapat menemukan segala h
 | Pengguna | Mengubah profil | Dapat mengubah informasi mengenai akun diri sendiri | 🔱🔱🔱🔱 |
 | Pengguna | Menghubungi Psikolog | Dapat melakukan konsultasi dengan psikolo melalui fitur chat | 🔱🔱🔱🔱 |
 
-## UI / UX Desain
+## *Data Structure*
+```mermaid
+erDiagram
+  USER {
+    string nama_USER
+    string email_USER
+    string password_USER
+    int id_USER
+  }
+  USER ||--o{ MOODTRACKER : membuat 
+  USER ||--o{ MOODTRACKER : melihat
+  MOODTRACKER {
+    string hari_dibuat
+    int tanggal_dibuat
+    string mood_USER
+    string emosi_USER
+    string isi_perasaan 
+  }
+  USER ||--o{ ARTICLE : membuka
+  ARTICLE {
+    string judul_artikel
+    string isi_artikel
+  }
+   USER ||--o{ PLAYLIST : mengakses
+   PLAYLIST {
+    string judul_musik
+    string putar_musik
+   }
+```
+
+## *UI / UX Desain*
 ![Desain 1](https://cdn.dribbble.com/userupload/10984625/file/original-6797b06bddbd9219d3be9faf98e30cf1.png) 
 ![Desain 2](https://cdn.dribbble.com/userupload/10984624/file/original-664e74d154da91d8f3b7a0b40a6c2f65.png)
