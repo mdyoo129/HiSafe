@@ -1,4 +1,4 @@
-# HiSafe App (User Story)
+# HiSafe App
 Muhamad Dyo Rijki Fadillah - Oct 24, 2023
 
 ## *Background*
