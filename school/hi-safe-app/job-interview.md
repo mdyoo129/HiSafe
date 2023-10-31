@@ -33,14 +33,24 @@ HiSafe merupakan aplikasi yang memungkinkan penggunanya dapat menemukan segala h
 | Sebagai | Saya ingin bisa | Sehingga | Prioritas |
 | ------ | ------ | ------ | ------ |
 | Pengguna | Melihat artikel tentang mental health | Dapat mengetahui informasi tentang mental health | 🔱🔱🔱🔱🔱 |
-| Pengguna | Melihat progres mood | Dapat mengetahui perkembangan mood dari beberapa hari ke belakang | 🔱🔱🔱🔱 |
+| Pengguna | Melihat progres mood | Dapat mengetahui perkembangan mood dari beberapa hari ke belakang | 🔱🔱🔱🔱🔱 |
 | Pengguna | Memutar playlist meditasi | Dapat mendengarkan musik yang membuat pikiran tenang | 🔱🔱🔱🔱 |
 | Pengguna | Membuat thread | Dapat menceritakan pengalaman dan meminta pendapat pengguna lain | 🔱🔱🔱 |
 | Pengguna | Membalas thread | Dapat memberikan pendapat kepada pengguna lain | 🔱🔱🔱 |
 | Pengguna | Melihat thread | Dapat mengetahui informasi baik dari thread sendiri maupun thread pengguna lain | 🔱🔱🔱 |
 | Pengguna | Melihat profil | Dapat mengetahui informasi mengenai akun atau profil sendiri | 🔱🔱🔱🔱 |
 | Pengguna | Mengubah profil | Dapat mengubah informasi mengenai akun diri sendiri | 🔱🔱🔱🔱 |
-| Pengguna | Menghubungi Psikolog | Dapat melakukan konsultasi dengan psikolo melalui fitur chat | 🔱🔱🔱🔱 |
+| Pengguna | Menghubungi Konselor | Dapat melakukan konsultasi dengan konselor melalui fitur chat | 🔱🔱🔱🔱 |
+| Pengguna | Membuat janji | Dapat bertemu dengan konselor secara langsung untuk konsultasi | 🔱🔱🔱 |
+| Konselor | Membuat thread | Dapat memberikan cerita motivasi kepada pengguna lain | 🔱🔱🔱 |
+| Konselor | Melihat thread | Dapat mengetahui informasi baik dari thread sendiri maupun thread pengguna lain | 🔱🔱🔱 |
+| Konselor | Melihat profil | Dapat mengetahui informasi mengenai akun atau profil sendiri | 🔱🔱🔱 |
+| Konselor | Mengubah profil | Dapat mengubah informasi mengenai akun diri sendiri | 🔱🔱 |
+| Konselor | Menerima pesan | Dapat berinteraksi dengan pengguna | 🔱🔱🔱🔱 |
+| Konselor | Membuat artikel | Dapat membagikan informasi lengkap kepada pengguna maupun konselor lain | 🔱🔱🔱 |
+| Konselor | Membuat janji | Dapat bertemu dengan pengguna secara langsung untuk konsultasi | 🔱🔱🔱 |
+| Konselor | Mengubah playlist | Dapat menambahkan atau menghapus lagu sesuai playlist yang ada | 🔱🔱 |
+
 
 ## *Data Structure*
 ```mermaid
