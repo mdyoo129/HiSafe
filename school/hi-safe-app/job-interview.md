@@ -42,6 +42,8 @@ HiSafe merupakan aplikasi yang memungkinkan penggunanya dapat menemukan segala h
 | Pengguna | Mengubah profil | Dapat mengubah informasi mengenai akun diri sendiri | 🔱🔱🔱🔱 |
 | Pengguna | Menghubungi Konselor | Dapat melakukan konsultasi dengan konselor melalui fitur chat | 🔱🔱🔱🔱 |
 | Pengguna | Membuat janji | Dapat bertemu dengan konselor secara langsung untuk konsultasi | 🔱🔱🔱 |
+| Pengguna | Mendapatkan notifikasi artikel | Dapat menerima informasi terbaru mengenai artikel yang relevan | 🔱🔱 |
+| Pengguna | Mendapatkan notifikasi pengingat | Dapat dengan cepat mengisi mood tracker dari pengingat | 🔱🔱 |
 | Konselor | Membuat thread | Dapat memberikan cerita motivasi kepada pengguna lain | 🔱🔱🔱 |
 | Konselor | Melihat thread | Dapat mengetahui informasi baik dari thread sendiri maupun thread pengguna lain | 🔱🔱🔱 |
 | Konselor | Melihat profil | Dapat mengetahui informasi mengenai akun atau profil sendiri | 🔱🔱🔱 |
@@ -50,7 +52,6 @@ HiSafe merupakan aplikasi yang memungkinkan penggunanya dapat menemukan segala h
 | Konselor | Membuat artikel | Dapat membagikan informasi lengkap kepada pengguna maupun konselor lain | 🔱🔱🔱 |
 | Konselor | Membuat janji | Dapat bertemu dengan pengguna secara langsung untuk konsultasi | 🔱🔱🔱 |
 | Konselor | Mengubah playlist | Dapat menambahkan atau menghapus lagu sesuai playlist yang ada | 🔱🔱 |
-
 
 ## *Data Structure*
 ```mermaid
@@ -82,6 +83,27 @@ erDiagram
    }
 ```
 
-## *UI / UX Desain*
+## *Architecture*
+Ideal Flowchart
+```mermaid
+flowchart BT 
+  subgraph cloud
+    B[Web Server: JavaScript - Express.js ] <--> C[Aplikasi Web Backend: JavaScript - Express.js] 
+    C <--> D[Database: PostgreSQL] 
+  end
+  A[Aplikasi Android & iPhone: JavaScript - React Native] <--> B
+```
+
+Now Flowchart
+```mermaid
+flowchart BT 
+  subgraph cloud
+    B[Web Server: - ] <--> C[Aplikasi Web Backend: - ] 
+    C <--> D[Database: - ] 
+  end
+  A[Aplikasi Android & iPhone: JavaScript - React Native] <--> B
+```
+
+## *UI / UX Design*
 ![Desain 1](https://cdn.dribbble.com/userupload/10984625/file/original-6797b06bddbd9219d3be9faf98e30cf1.png) 
 ![Desain 2](https://cdn.dribbble.com/userupload/10984624/file/original-664e74d154da91d8f3b7a0b40a6c2f65.png)
