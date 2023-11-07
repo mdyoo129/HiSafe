@@ -55,6 +55,12 @@ HiSafe merupakan aplikasi kesehatan mental dengan berbagai fitur yang dapat meme
 | 18 | Konselor | Membuat artikel | Dapat membagikan informasi lengkap kepada pengguna maupun konselor lain | 🔱🔱🔱 |
 | 19 | Konselor | Membuat janji | Dapat bertemu dengan pengguna secara langsung untuk konsultasi | 🔱🔱🔱 |
 | 20 | Konselor | Mengubah playlist | Dapat menambahkan atau menghapus lagu sesuai playlist yang ada | 🔱🔱 |
+| 21 | Pengguna | Masuk | Dapat mengakses semua fitur di dalam aplikasi | 🔱🔱🔱🔱 |
+| 22 | Konselor | Masuk | Dapat mengakses semua fitur di dalam aplikasi | 🔱🔱🔱🔱 |
+| 23 | Pengguna | Memilih emoticon | Dapat mengekspreesikan perasaan lalu dapat mengakses mood tracker | 🔱🔱🔱 |
+| 24 | Pengguna | Memilih artikel berdasarkan kata kunci | Dapat melihat artikel yang sesuai dengan yang sedang dicari | 🔱🔱 |
+| 25 | Pengguna | Menulis isi hati | Dapat mencurahkan segala hal dalam tulisan | 🔱🔱🔱 |
+| 26 | Pengguna | Mengatur privasi tulisan | Dapat merasa aman ketika bercerita dalam tulisan | 🔱🔱🔱 |
 
 ## 3. Struktur Data
 
@@ -89,7 +95,7 @@ erDiagram
 
 ## 4. Arsitektur Sistem
 
-Ideal Flowchart
+### Ideal Flowchart
 ```mermaid
 flowchart BT 
   subgraph cloud
@@ -99,7 +105,7 @@ flowchart BT
   A[Aplikasi Android & iPhone: JavaScript - React Native] <--> B
 ```
 
-Now Flowchart
+### Now Flowchart
 ```mermaid
 flowchart BT 
   subgraph cloud
@@ -111,7 +117,7 @@ flowchart BT
 
 ## 5. Teknologi, Library, dan Framework
 
-*Teknologi
+### Teknologi
 Beberapa teknologi yang digunakan yakni:
 - Figma (sebagai pembuat design ui dan ux)
 - React Native (sebagai pembuat aplikasi android)
