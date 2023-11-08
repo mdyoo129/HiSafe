@@ -2,7 +2,7 @@
 
 ## 1.1 Latar Belakang
 
-Menurut hasil Sensus Penduduk tahun 2020, penduduk Indonesia didominasi oleh generasi Z yaitu mencapai sekitar 74,39 juta orang atau 27,94% dari total penduduk Indonesia. Generasi Z disebut-sebut sebagai generasi yang memiliki mental yang lemah, mereka juga rentan mengalami apa yang dinamakan dengan Gangguan Kesehatan Mental. Tidak jarang, banyak kasus bunuh diri, self harm, bahkan melukai dan mengganggu sesama karena perasaan mental mereka yang tidak baik. Penyebab utamanya kebanyakan dari keadaan lingkungan, keadaan keluarga, dan juga tidak memiliki solusi akan masalah yang sedang dihadapi. Alasan lain generasi Z dianggap memiliki mental yang lebih lemah adalah karena kebutuhan sosial yang tidak terpenuhi, termasuk pendapatan, pendidikan tinggi, pekerjaan, makanan yang lebih baik, perumahan mewah, transportasi yang nyaman, dukungan sosial, keamanan, dan lain-lain. Banyak orang yang bisa mengatasi kesehatan mentalnya dengan berkonsultasi kepada orang yang ahli dalam bidang tersebut ataupun mengikuti terapi dengan harga yang tidak murah. Namun hal tersebut berbeda bagi sebagian orang yang memiliki masalah kesehatan mental tetapi tidak mempunyai dana untuk mengatasi masalah kesehatan mentalnya. Alhasil mereka membiarkan kesehatan mental mereka kacau ataupun berusaha untuk mengatasinya namun dengan minim informasi. Dari permasalahan tersebut, saya mendapatkan inspirasi untuk membuat sebuah aplikasi guna mengurangi terjadinya hal yang tidak diinginkan disebabkan kesehatan mental yang terganggu, dan tentunya murah bahkan gratis jika masalah yang diderita tidak terlalu serius. Maka lahirlah aplikasi HiSafe guna mengatasi hal-hal tersebut. Dalam pengembangannya, HiSafe diharapkan mampu menyediakan segala hal mengenai kesehatan mental yang mampu membantu semua pengguna khususnya pengguna yang telah ditargetkan. Sebagai pembuat aplikasi ini, saya sangat menerima pendapat-pendapat pengguna untuk pengembangan aplikasi ini untuk meningkatkan kenyamanan penggunanya.
+Menurut hasil Sensus Penduduk tahun 2020, penduduk Indonesia didominasi oleh generasi Z yaitu mencapai sekitar 74,39 juta orang atau 27,94% dari total penduduk Indonesia. Generasi Z disebut-sebut sebagai generasi yang memiliki mental yang lemah, mereka juga rentan mengalami apa yang dinamakan dengan Gangguan Kesehatan Mental. Tidak jarang, banyak kasus bunuh diri, self harm, bahkan melukai dan mengganggu sesama karena perasaan mental mereka yang tidak baik. Penyebab utamanya kebanyakan dari keadaan lingkungan, keadaan keluarga, dan juga tidak memiliki solusi akan masalah yang sedang dihadapi. Alasan lain generasi Z dianggap memiliki mental yang lebih lemah adalah karena kebutuhan sosial yang tidak terpenuhi, termasuk pendapatan, pendidikan tinggi, pekerjaan, makanan yang lebih baik, perumahan mewah, transportasi yang nyaman, dukungan sosial, keamanan, dan lain-lain. Banyak orang yang bisa mengatasi kesehatan mentalnya dengan berkonsultasi kepada orang yang ahli dalam bidang tersebut ataupun mengikuti terapi dengan harga yang tidak murah. Namun hal tersebut berbeda bagi sebagian orang yang memiliki masalah kesehatan mental tetapi tidak mempunyai dana untuk mengatasi masalah kesehatan mentalnya. Alhasil mereka membiarkan kesehatan mental mereka kacau ataupun berusaha untuk mengatasinya namun dengan minim informasi. Dari permasalahan tersebut, saya mendapatkan inspirasi untuk membuat sebuah aplikasi guna mengurangi terjadinya hal yang tidak diinginkan disebabkan kesehatan mental yang terganggu, dan tentunya murah bahkan gratis jika masalah yang diderita tidak terlalu serius. Maka lahirlah aplikasi HiSafe guna mengatasi hal-hal tersebut. Dalam pengembangannya, HiSafe diharapkan mampu menyediakan segala hal mengenai kesehatan mental yang dapat membantu semua pengguna khususnya pengguna yang telah ditargetkan. Sebagai pembuat aplikasi ini, saya sangat menerima pendapat-pendapat pengguna untuk pengembangan aplikasi ini guna meningkatkan kenyamanan penggunanya.
 
 ## 1.2. Deksripsi Teknologi Informasi
 
@@ -67,30 +67,56 @@ HiSafe merupakan aplikasi kesehatan mental dengan berbagai fitur yang dapat meme
 ```mermaid
 erDiagram
   USER {
-    string nama_USER
-    string email_USER
-    string password_USER
-    int id_USER
+    int id_user
+    string nama_user
+    string email_user
+    string password_user
+    int umur_user
+    string jeniskelamin_user
   }
-  USER ||--o{ MOODTRACKER : membuat 
-  USER ||--o{ MOODTRACKER : melihat
+
+  KONSELOR {
+    int id_konselor
+    string nama_konselor
+    string email_konselor
+    string password_konselor
+    int umur_konselor
+  }
+
+  USER ||--o{ MOODTRACKER
+  USER ||--o{ MOODTRACKER
   MOODTRACKER {
-    string hari_dibuat
-    int tanggal_dibuat
-    string mood_USER
-    string emosi_USER
-    string isi_perasaan 
+    string id_mood_entry
+    string hari_mood
+    int tanggal_mood
+    int waktu_mood
+    string emoticon_mood_user
+    string catatan_perasaan_user
   }
+
   USER ||--o{ ARTICLE : membuka
   ARTICLE {
-    string judul_artikel
-    string isi_artikel
+    string id_article
+    string judul_article
+    string isi_article
+    int tanggal_publikasi_article
+    string penulis_article
   }
+
    USER ||--o{ PLAYLIST : mengakses
    PLAYLIST {
-    string judul_musik
-    string putar_musik
+    string id_playlist
+    string nama_playlist
+    string deskripsi_playlist
+    string daftar_musik
    }
+
+  DAFTARMUSIK {
+    string id_musik
+    string judul_musik
+    string url_musik
+    int durasi_musik
+  }
 ```
 
 ## 4. Arsitektur Sistem
@@ -100,7 +126,7 @@ erDiagram
 flowchart BT 
   subgraph cloud
     B[Web Server: JavaScript - Express.js ] <--> C[Aplikasi Web Backend: JavaScript - Express.js] 
-    C <--> D[Database: PostgreSQL] 
+    C <--> D[Database: Firebase & MongoDB] 
   end
   A[Aplikasi Android & iPhone: JavaScript - React Native] <--> B
 ```
@@ -125,7 +151,9 @@ Beberapa teknologi yang digunakan yakni:
 - Canva (untuk membuat design logo)
 - Mermaid.js (untuk membuat struktur data dan juga flowchart arsitektur sistem)
 *Library
+- React
 *Framework
+- React
 
 ## 6. Desain User Experience dan User Interface
 
