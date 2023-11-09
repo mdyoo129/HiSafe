@@ -83,8 +83,6 @@ erDiagram
     int umur_konselor
   }
 
-  USER ||--o{ MOODTRACKER
-  USER ||--o{ MOODTRACKER
   MOODTRACKER {
     string id_mood_entry
     string hari_mood
@@ -94,7 +92,6 @@ erDiagram
     string catatan_perasaan_user
   }
 
-  USER ||--o{ ARTICLE : membuka
   ARTICLE {
     string id_article
     string judul_article
@@ -103,7 +100,6 @@ erDiagram
     string penulis_article
   }
 
-   USER ||--o{ PLAYLIST : mengakses
    PLAYLIST {
     string id_playlist
     string nama_playlist
@@ -111,12 +107,19 @@ erDiagram
     string daftar_musik
    }
 
-  DAFTARMUSIK {
+   MUSICLIST {
     string id_musik
     string judul_musik
     string url_musik
     int durasi_musik
   }
+
+USER ||--|{ ARTICLE : membuka
+USER ||--o{ MOODTRACKER : membuka
+USER ||--o{ MOODTRACKER : membuat
+KONSELOR ||--|{ ARTICLE : membuat
+KONSELOR ||--|{ PLAYLIST : mengedit
+PLAYLIST ||--|{ MUSICLIST : memutar
 ```
 
 ## 4. Arsitektur Sistem
