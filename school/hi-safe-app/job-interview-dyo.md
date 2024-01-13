@@ -159,9 +159,8 @@ Beberapa teknologi yang digunakan yakni:
 - React
 
 ## 6. Desain User Experience dan User Interface
-
-![Desain 1](https://cdn.dribbble.com/userupload/10984625/file/original-6797b06bddbd9219d3be9faf98e30cf1.png) 
-![Desain 2](https://cdn.dribbble.com/userupload/10984624/file/original-664e74d154da91d8f3b7a0b40a6c2f65.png)
+![image](https://github.com/mdyoo129/HiSafe/assets/144449995/daa918d0-b4eb-46a2-a6eb-98eea95dd673)
+![image](https://github.com/mdyoo129/HiSafe/assets/144449995/afd54e77-1d89-418d-a5ec-6cd18cb9ed13)
 
 ## 7. Demonstrasi Video
 
